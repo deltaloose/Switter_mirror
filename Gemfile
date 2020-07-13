@@ -10,7 +10,7 @@ gem 'ransack'
 gem "bootstrap-sass",'~> 3.3.6'
 gem "jquery-rails"
 gem "pry-byebug"
-gem 'kaminari','~> 1.1.1'
+gem 'kaminari','~> 1.2.1'
 gem 'font-awesome-sass', '~> 5.4.1'
 
 

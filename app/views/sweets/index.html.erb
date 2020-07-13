@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row">
+    <!-- カテゴリとランキングはrender -->
+    <!--div class="sweet-body">
+      <div class="col-xs-3">
+        <div class="favorite-ranking">
+          <-- ランキング >
+          <h2>いいねランキング</h2>
+          <table class="">
+            <thead>
+              <tr>
+                <th class=""></th>
+                <th class=""></th>
+              </tr>
+            </thead>
+            <tbody>
+              <-- render 'sweets/table', sweets: @all_ranks %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div-->
+    <div class="col-xs-9">
+      <div class="sweets-index">
+        <!-- 一覧部分 -->
+        <h2 class="index-title">全投稿</h2>
+        <%= sort_link(@q, :name, "おかし名ソート") %>
+        <%= render 'sweets/list', sweets: @sweets %>
+      </div>
+    </div>
+    <div class="col-xs-1">
+      <%= render 'sweets/newbtn' %>
+    </div>
+    <div class="col-xs-2">
+      <%= render 'sweets/search', q: @q %>
+    </div>
+  </div>
+</div>
